@@ -1,0 +1,47 @@
+body {
+  background-color: #f8f9fa;
+}
+#imageuploadarea {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-color: #d1e7ff !important;
+  border-color: #0d6efd !important;
+  cursor: pointer;
+}
+.cardimgs {
+  height: 180px;
+  object-fit: cover;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animatedfadein {
+  animation: fadeIn 1s ease-out;
+}
+.animatedfadeinup {
+  animation: fadeInUp 1s ease-out;
+}
+.animatedfadedelay1 {
+  animation-delay: 0.1s;
+}
+.animatedfadedelay3 {
+  animation-delay: 0.3s;
+}
+.animatedfadedelay5 {
+  animation-delay: 0.5s;
+}
+.animated {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+#toastmsgdiv{
+    position: fixed; 
+    top: 1rem;
+    right: 1rem;
+    z-index: 1050;
+    width: 300px;
+}
